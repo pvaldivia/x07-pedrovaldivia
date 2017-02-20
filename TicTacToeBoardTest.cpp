@@ -18,3 +18,11 @@ TEST(TicTacToeBoardTest, sanityCheck)
 {
 	ASSERT_TRUE(true);
 }
+
+TEST(TicTacToeBoardTest, IncorrectPlacing)
+{
+	TicTacToeBoard Tic;
+	Piece actual;
+	actual = Tic.placePiece(4,5);
+	ASSERT_EQ(actual,Invalid); 
+}
